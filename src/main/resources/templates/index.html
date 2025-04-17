@@ -2,49 +2,66 @@
 <head>
 <!-- Meta tags -->
 <meta charset="utf-8">
-<meta name="viewport" content="width = device-width, initial-scale = 1, shrink-to-fit = no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Charity</title>
+    <link rel="stylesheet" href="/css/main.css">
 
-<!-- Bootstrap CSS -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-
-<title>Watchlist App</title>
 </head>
 
-<body>
-	<div class="container">
- 		<nav class = "navbar navbar-expand-sm navbar-dark bg-secondary">
-            <a class = "navbar-brand" href = "homepage-static.html">Watchlist App</a>
-            <button class = "navbar-toggler" type = "button" data-toggle = "collapse" 
-               data-target = "#navbarSupportedContent" 
-               aria-controls = "navbarSupportedContent" aria-expanded = "false" 
-               aria-label = "Toggle navigation">
-               
-               <span class = "navbar-toggler-icon"></span>
-            </button>
-            
-            <div class = "collapse navbar-collapse" id = "navbarSupportedContent">
-               <ul class = "navbar-nav mr-auto">
-                  <li class = "nav-item">
-                     <a class = "nav-link active" href = "homepage-static.html">Home</a>
-                  </li>
-                  <li class = "nav-item">
-                     <a class = "nav-link" href = "watchlist-static.html">Watchlist</a>
-                  </li>
-                  <li class = "nav-item ">
-                     <a class = "nav-link" href = "watchlistItemForm-static.html">Submit an item</a>
-                  </li>
-               </ul>
-               
-            </div>
-      	</nav> 
-		<h2  class = "mt-4">Welcome to the Watchlist application!</h2> <br>
-		<h5 >Made for movie lovers who have a hard time choosing their next movie to watch.</h5>
-		
-	</div>
+<!-- NAVBAR -->
+<div th:replace="components/navbar :: navbar"></div>
 
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<!-- HERO BANNER -->
+<div class="position-relative hero-section" style="height:90vh;">
+    <img src="/assets/images/hero.jpg" class="object-fit-cover w-100 h-100"   alt="Volunteers">
+    <div class="position-absolute p-4 bg-white rounded shadow" style="max-width: 400px; left:20%; top:40%;">
+        <h4 class="fs-3 fw-bold">Search for Charities</h4>
+        <p class="text-muted fs-5">Explore charities that match your passions, view their ratings, and support them with your donation.</p>
+        <form action="/explore" method="get">
+            <div class="input-group">
+                <input type="text" class="form-control" name="q" placeholder="Search...">
+                <button class="btn btn-primary" type="submit">Search</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- DISCOVER LIST -->
+<section class="container my-5">
+    <h2 class="mb-4 text-center">Discover Charity List</h2>
+    <div class="row row-cols-1 row-cols-md-3 g-4" >
+        <div class="col">
+            <div class="card h-100 shadow-sm">
+                <img src='/assets/images/charity1.jpg' style="height:250px"  class="card-img-top object-fit-cover" alt="Image">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold" >Myanmar and Thailand Earthquake</h5>
+                    <p class="card-text">Highly rated charities providing both immediate and long-term support to those affected by the recent Myanmar earthquake.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 shadow-sm">
+                <img src='/assets/images/charity2.jpg' style="height:250px" class="card-img-top object-fit-cover" alt="Image">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold" >Charity Title</h5>
+                    <p class="card-text">Highly rated charities providing both immediate and long-term support to those affected by the recent Myanmar earthquake.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 shadow-sm">
+                <img src='/assets/images/charity3.jpg'  style="height:250px"  class="card-img-top object-fit-cover" alt="Image">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold" >Charity Title</h5>
+                    <p class="card-text">Highly rated charities providing both immediate and long-term support to those affected by the recent Myanmar earthquake.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<div th:replace="components/footer :: footer"></div>
 
 </body>
 </html>

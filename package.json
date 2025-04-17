@@ -1,0 +1,24 @@
+{
+  "name": "charity",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/designcraftsman/Charity#readme",
+  "bugs": {
+    "url": "https://github.com/designcraftsman/Charity/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/designcraftsman/Charity.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch src/main/resources/sass/main.scss:src/main/resources/static/css/main.css"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.5",
+    "sass": "^1.86.3"
+  }
+}
