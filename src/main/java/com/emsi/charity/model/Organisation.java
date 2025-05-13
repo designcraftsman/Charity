@@ -57,6 +57,23 @@ public class Organisation {
     public List<ActionCharite> getActions() {
         return actions;
     }
+    public void setId(Long id) { this.id = id; }
+
+    public void setNom(String nom) { this.nom = nom; }
+
+    public void setAdresseLegale(String adresseLegale) { this.adresseLegale = adresseLegale; }
+
+    public void setNumeroFiscal(String numeroFiscal) { this.numeroFiscal = numeroFiscal; }
+
+    public void setContactPrincipal(String contactPrincipal) { this.contactPrincipal = contactPrincipal; }
+
+    public void setDescription(String description) { this.description = description; }
+
+    public void setLogo(String logo) { this.logo = logo; }
+
+    public void setEstApprouvee(boolean estApprouvee) { this.estApprouvee = estApprouvee; }
+
+    public void setActions(List<ActionCharite> actions) { this.actions = actions; }
 
     // Getters/setters
 }

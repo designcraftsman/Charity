@@ -1,19 +1,11 @@
-<html lang="en">
-<head>
-<!-- Meta tags -->
-<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Charity</title>
-    <link rel="stylesheet" href="/css/main.css">
-
-</head>
+<div th:replace="components/head :: head"></div>
 
 <!-- NAVBAR -->
 <div th:replace="components/navbar :: navbar"></div>
 
 <!-- HERO BANNER -->
 <div class="position-relative hero-section" style="height:90vh;">
-    <img src="/assets/images/hero.jpg" class="object-fit-cover w-100 h-100"   alt="Volunteers">
+    <img src="/assets/images/hero.jpg" class="object-fit-cover w-100 h-100" alt="Volunteers">
     <div class="position-absolute p-4 bg-white rounded shadow" style="max-width: 400px; left:20%; top:40%;">
         <h4 class="fs-3 fw-bold">Search for Charities</h4>
         <p class="text-muted fs-5">Explore charities that match your passions, view their ratings, and support them with your donation.</p>
@@ -32,7 +24,7 @@
     <div class="row row-cols-1 row-cols-md-3 g-4" >
         <div class="col">
             <div class="card h-100 shadow-sm">
-                <img src='/assets/images/charity1.jpg' style="height:250px"  class="card-img-top object-fit-cover" alt="Image">
+                <img src='/assets/images/charity1.jpg' style="height:250px" class="card-img-top object-fit-cover" alt="Image">
                 <div class="card-body">
                     <h5 class="card-title fw-bold" >Myanmar and Thailand Earthquake</h5>
                     <p class="card-text">Highly rated charities providing both immediate and long-term support to those affected by the recent Myanmar earthquake.</p>
@@ -50,7 +42,7 @@
         </div>
         <div class="col">
             <div class="card h-100 shadow-sm">
-                <img src='/assets/images/charity3.jpg'  style="height:250px"  class="card-img-top object-fit-cover" alt="Image">
+                <img src='/assets/images/charity3.jpg' style="height:250px" class="card-img-top object-fit-cover" alt="Image">
                 <div class="card-body">
                     <h5 class="card-title fw-bold" >Charity Title</h5>
                     <p class="card-text">Highly rated charities providing both immediate and long-term support to those affected by the recent Myanmar earthquake.</p>

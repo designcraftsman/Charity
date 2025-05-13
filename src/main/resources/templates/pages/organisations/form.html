@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><title>Organisation Form</title></head>
+<body>
+<h1 th:text="${organisation.id == null ? 'Create Organisation' : 'Edit Organisation'}"></h1>
+
+<form th:action="@{${organisation.id == null} ? '/organisations/create' : '/organisations/edit/' + ${organisation.id}}"
+      th:object="${organisation}" method="post">
+    <label>Name: <input type="text" th:field="*{nom}" /></label><br>
+    <label>Description: <textarea th:field="*{description}"></textarea></label><br>
+    <label>Logo URL: <input type="text" th:field="*{logo}" /></label><br>
+    <label>Approved: <input type="checkbox" th:field="*{estApprouvee}" /></label><br>
+    <button type="submit">Save</button>
+</form>
+
+<a th:href="@{/organisations}">Back to List</a>
+</body>
+</html>

@@ -17,5 +17,21 @@ public class OrganisationDTO {
         this.estApprouvee = estApprouvee;
     }
 
+    public Long getId() { return id; }
+    public void setId(Long id) { this.id = id; }
+
+    public String getNom() { return nom; }
+    public void setNom(String nom) { this.nom = nom; }
+
+    public String getLogo() { return logo; }
+    public void setLogo(String logo) { this.logo = logo; }
+
+    public String getDescription() { return description; }
+    public void setDescription(String description) { this.description = description; }
+
+    public boolean isEstApprouvee() { return estApprouvee; }
+    public void setEstApprouvee(boolean estApprouvee) { this.estApprouvee = estApprouvee; }
+
+
     // Getters/setters
 }
